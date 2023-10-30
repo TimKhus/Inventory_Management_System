@@ -34,8 +34,10 @@ The application validates and processes payments securely.
 
 6. Admin Mode:
 
+To enter Admin mode use login "admin" and password "admin".
 The system includes an admin mode that allows administrators to manage and maintain inventory items and user data.
 Admins can add, update, and delete products and view user information.
+
 How to Run the Application:
 
 Ensure you have Java installed on your system.
