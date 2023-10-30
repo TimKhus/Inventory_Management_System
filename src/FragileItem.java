@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class FragileItem extends InventoryItem {
     private double weight;
     private String color;
-    private boolean addedToInventory;
     private boolean extraPacked = false;
 
     public FragileItem(String name, String category, double price, int quantity, double weight, String color) {
@@ -26,10 +25,6 @@ public class FragileItem extends InventoryItem {
         if (!doesItemExist(name, category, price, color)) {
             InventoryManager.addInventoryItem(this);
         }
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
     }
 
     public void setColor(String color) {

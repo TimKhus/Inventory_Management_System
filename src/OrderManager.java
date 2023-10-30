@@ -18,15 +18,6 @@ public class OrderManager {
         orders.add(order);
     }
 
-    public Order findOrder(int orderNumber) {
-        for (Order order : orders) {
-            if (order.getOrderNumber() == orderNumber) {
-                return order;
-            }
-        }
-        return null;
-    }
-
     public void showProductsByCategory() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Select the main category:");

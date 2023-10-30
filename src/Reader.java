@@ -83,7 +83,7 @@ public class Reader {
 
                         ShoppingCart cart = new ShoppingCart(userEmail);
                         Payment payment = new Payment();
-                        if (paymentIsSuccessful == true) {
+                        if (paymentIsSuccessful) {
                             payment.setSuccessfulPayment();
                         }
 

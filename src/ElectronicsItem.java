@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class ElectronicsItem extends InventoryItem {
     private String color;
-    private boolean addedToInventory;
 
     public ElectronicsItem(String name, String category, double price, int quantity, String color) {
         super(name, category, price, quantity);

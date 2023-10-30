@@ -5,7 +5,7 @@ public class ECommerceApp {
         InventoryManager manager = new InventoryManager();
         Admin admin = new Admin("admin");
         OrderManager orderManager = new OrderManager();
-        Reader.readDataFromFile("C:\\Users\\User\\IdeaProjects\\Inventory Management System\\src\\data.csv");
+        Reader.readDataFromFile("data.csv");
 
 
         Scanner sc = new Scanner(System.in);
@@ -243,8 +243,8 @@ public class ECommerceApp {
                     }
                     case 7 -> {
                         exit = true;
-                        Writer.clearData("C:\\Users\\User\\IdeaProjects\\Inventory Management System\\src\\data.csv");
-                        Writer.saveDataToFile("C:\\Users\\User\\IdeaProjects\\Inventory Management System\\src\\data.csv");
+                        Writer.clearData("data.csv");
+                        Writer.saveDataToFile("data.csv");
                     }
                     case 0 -> {
                         // if we go to admin mode from user registered mode this helps to log out anyway
