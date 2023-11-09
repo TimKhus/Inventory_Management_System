@@ -138,13 +138,16 @@ public class ECommerceApp {
                             }
                             System.out.println();
                         } else {
-                            System.out.println("Please login or register to view room types and work with reservations");
+                            System.out.println("Please login or register to work with app");
                             System.out.println();
                         }
                     }
                     case 3 -> {
                         if (loggedIn) {
                             orderManager.showProductsByCategory();
+                        } else {
+                            System.out.println("Please login or register to work with app");
+                            System.out.println();
                         }
 
                     }
@@ -219,15 +222,20 @@ public class ECommerceApp {
                                 }
                             }
                         } else {
-                            System.out.println("Please log in or register to create an order.");
+                            System.out.println("Please login or register to work with app");
                         }
                         System.out.println();
                     }
                     case 5 -> {
-                        for (Order order : OrderManager.getOrders()) {
-                            if (order.getUserEmail().equals(loginEmail)) {
-                                System.out.println(order);
+                        if (loggedIn) {
+                            for (Order order : OrderManager.getOrders()) {
+                                if (order.getUserEmail().equals(loginEmail)) {
+                                    System.out.println(order);
+                                }
                             }
+                        } else {
+                            System.out.println("Please login or register to work with app");
+                            System.out.println();
                         }
                     }
                     case 6 -> {
@@ -237,7 +245,7 @@ public class ECommerceApp {
                             loginEmail = null;
                             loggedIn = false;
                         } else {
-                            System.out.println("Please login or register to view room types and work with reservations");
+                            System.out.println("Please login or register to work with app");
                             System.out.println();
                         }
                     }
